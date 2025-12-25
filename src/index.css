@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+@layer base {
+  html, body {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white/70 dark:bg-gray-800/60 backdrop-blur-md shadow-soft;
+  }
+  .card {
+    @apply p-4 rounded-xl bg-white dark:bg-gray-800 shadow-soft;
+  }
+}
